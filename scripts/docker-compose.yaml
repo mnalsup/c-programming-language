@@ -1,0 +1,14 @@
+version: "3.7"
+services:
+  c-dev:
+    container_name: c-prog
+    image: development-container:latest
+    ports: []
+    volumes:
+      - ../:/root/c_prog_lang
+      - ~/.config:/root/.config
+      - ~/.zshrc:/root/.zshrc
+      - ~/.oh-my-zsh:/root/.oh-my-zsh
+      - ~/.vimrc:/root/.vimrc
+      - ~/.gitconfig:/root/.gitconfig
+      - ~/.ssh:/root/.ssh
